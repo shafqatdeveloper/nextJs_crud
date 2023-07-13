@@ -5,8 +5,8 @@ import { useState } from "react"
 
 const Edit = ({ id, title, description }) => {
   const router = useRouter()
-  const [newTitle, setnewTitle] = useState(title || '')
-  const [newDescription, setNewDescription] = useState(description || '')
+  const [newTitle, setnewTitle] = useState(title)
+  const [newDescription, setNewDescription] = useState(description)
   const upadteHandler = async (e) => {
     e.preventDefault();
     const res = await fetch(`http://localhost:3000/api/topics/${id}`, {
