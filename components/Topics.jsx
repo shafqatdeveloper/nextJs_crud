@@ -21,8 +21,8 @@ const Topics = async () => {
   return (
     <div className="w-[60%] mt-5">
       {
-        topics.map((topic) => (
-          <div className="p-2 my-2 flex justify-between border-[1px] border-gray-400  ">
+        topics.map((topic, index) => (
+          <div key={index} className="p-2 my-2 flex justify-between border-[1px] border-gray-400  ">
             <div>
               <h1 className="font-semibold text-lg tracking-wider">{topic.title}</h1>
               <p className="text-gray-600">{topic.description}</p>
