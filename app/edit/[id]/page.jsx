@@ -17,7 +17,7 @@ const getTopicById = async (id) => {
     }
 };
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
     const { id } = params
     const [topic, setTopic] = useState({});
 
@@ -32,4 +32,4 @@ const page = ({ params }) => {
     return <Edit id={id} title={title} description={description} />;
 }
 
-export default page;
+export default Page;
