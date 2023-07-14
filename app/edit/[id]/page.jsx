@@ -1,7 +1,6 @@
 "use client"
 import Edit from "@/components/Edit";
 import { useEffect, useState } from "react";
-
 const getTopicById = async (id) => {
     console.log(id)
     try {
